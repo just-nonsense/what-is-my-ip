@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What is my IP?</title>
+
+<!-- Swap the "your_image_name.jpg" with your favicon name -->
+    <link rel="icon" type="image/png" href="your_image_name.jpg" sizes="32x32" />
+
+    <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    <section id="content">
+      <h1>What is my IP?</h1>
+      <p>
+        Your <a>IP</a>: <span id="ip">Loading...</span>
+<br>
+        Your approximate <a>Location</a>: <span id="city">Loading...</span> (<span id="postal"></span>)
+<br>
+        Your <a>Provider</a>: <span id="org">Loading...</span>
+      </p>
+<br><br>
+    </section>
+  </body>
+
+  <script>
+    $.getJSON("https://ipapi.co/json", function(data) {
+      $("#ip").text(data.ip);
+      $("#city").text(data.city);
+      $("#region").text(data.region);
+      $("#country").text(data.country_name);
+      $("#postal").text(data.postal);
+      $("#latitude").text(data.latitude);
+      $("#longitude").text(data.longitude);
+      $("#calling-code").text(data.country_calling_code);
+      $("#currency").text(data.currency_name);
+      $("#languages").text(data.languages);
+      $("#org").text(data.org);
+    });
+
+<!--
+
+Variables:
+
+- ip = IP Adress
+- city = City
+- region = Region
+- country = Country
+- postal = Postal Code
+- latitude = Latitude
+- longitude = Longitude
+- calling-code = Calling Code 
+- currency = Currency
+- languages = Languages
+- org = Internet Providor
+
+-->
+  </script>
+  
+</html>
