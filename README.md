@@ -1,10 +1,12 @@
 ## What is my IP? | HTML Template
 
 ### General
-HTML Website for detecting the IP, Location, [...] of the Visitor. The Website uses the IP-API by [ipapi.co](https://ipapi.co/). (https://ipapi.co/json)
+HTML Website for detecting the IP, Location, [...] of the Visitor. The Website uses the IP-API by [ipapi.co](https://ipapi.co/). *(https://ipapi.co/json)*
 
 ### Demo
-You can view the live demo [here](https://dsc.gg). 
+You can view the live demo [here](https://just-nonsense.github.io/whatismyip/). 
+
+*(detecting doesn't work on the github.io server. It works on your local browser or webserver)*
 
 ### Variables
 Only the "ip", "city", "postal" and "org" Variables are used in the Website, but there are some more which you can also use:
@@ -21,4 +23,4 @@ Only the "ip", "city", "postal" and "org" Variables are used in the Website, but
 - languages = Language of Country
 - org = Internet Provider of Visitor
 
-###### © just-nonsense 2023
+###### *© just-nonsense 2023*
