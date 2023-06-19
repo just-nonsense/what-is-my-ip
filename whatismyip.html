@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -30,9 +28,10 @@
         Your <a>Provider</a>: <span id="org">Loading...</span>
       </p>
 <br><br>
+      <!--  Please don't remove this link. If you want, you can make it less noticable or change the text. -->
+      <a href="https://github.com/just-nonsense/">IP Detector by just nonsense</a></a>
     </section>
   </body>
-
   <script>
     $.getJSON("https://ipapi.co/json", function(data) {
       $("#ip").text(data.ip);
@@ -47,7 +46,7 @@
       $("#languages").text(data.languages);
       $("#org").text(data.org);
     });
-
+    
 <!--
 
 Variables:
@@ -66,5 +65,4 @@ Variables:
 
 -->
   </script>
-  
 </html>
